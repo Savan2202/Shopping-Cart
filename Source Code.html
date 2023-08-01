@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping system</title>
+    <style>
+        #up1 {
+            display: inline;
+            position: relative;
+            padding: 10px;
+        }
+
+        #up3 {
+            display: inline;
+            position: relative;
+            padding: 5px;
+        }
+
+        #up2 {
+            display: inline;
+            position: relative;
+            padding-top: 3px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(152, 137, 166);
+        }
+
+        nav {
+            background-image: linear-gradient(to left, rgb(89, 88, 88), rgb(0, 0, 0));
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+
+        input {
+            background-color: rgb(249, 239, 227);
+            width: 40px;
+        }
+
+        input:hover {
+            background-color: aliceblue;
+        }
+
+        .sub {
+            background-color: white;
+            color: black;
+            display: inline-block;
+            display: relative;
+            margin-left: 30px;
+            padding: 25px 30px 25px 30px;
+            text-align: center;
+        }
+
+        img {
+            width: 175px;
+            height: 200px;
+
+        }
+
+        #label {
+            background-color: rgb(238, 237, 227);
+            padding: 45px;
+            color: white;
+            text-align: center;
+        }
+
+        #this {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+        }
+
+        .im {
+            width: 80px
+        }
+
+        @media print {
+            h3 {
+                display: none;
+            }
+
+            .first {
+                display: none;
+            }
+
+            .second {
+                display: none;
+            }
+
+            #third {
+                color: rgb(198, 102, 58);
+            }
+
+            #up3 {
+                display: none;
+            }
+
+            #up2 {
+                display: none;
+            }
+
+            #bill {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-image: linear-gradient(to left, rgb(89, 88, 88), rgb(0, 0, 0));">
+    <div style="background-color: rgb(12, 12, 12); ">
+        <h1 id="label" style="color: blueviolet;">
+            <nav>
+            <center>E-SHOPPING WEBSITE</center><a href="Login_in.html" target="_blank">
+                <center>Login</center></a>
+            </nav>
+            </a>
+        </h1>
+
+    </div>
+    <div style="color: white;">
+        <h2 style="text-align: center;">Moblie:</h2>
+        <div class="first" style="margin-left: 3%;">
+            <div class="sub" style="border-style:groove ; border-radius: 15px;">
+                <img src="https://m.media-amazon.com/images/I/71yzJoE7WlL._SL1500_.jpg" width="50px" height="50px"
+                    style="border-style:double; border-color:black;"><br>
+                iphone 14 pro Max<br>
+                Price: 1,49,900 rs<br>
+                Add Items = <input type="number" id="fire"><br><br>
+                <button id="bill" onclick="bill_it();  ">Add to Cart</button>
+            </div>
+            <div class="sub" style="border-style:groove ; border-radius: 15px;">
+                <img src="https://m.media-amazon.com/images/I/613SAOPmLeL._SX679_.jpg" width="50px" height="50px"
+                    style="border-style:double; border-color: black;"><br>
+                OnePlus 11R 5G<br>
+                Price: 39,999rs<br>
+                Add Items = <input type="number" id="rich"><br><br>
+                <button id="bill" onclick="bill_it();">Add to Cart</button>
+            </div>
+            <div class="sub" style="border-style:groove ; border-radius: 15px;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/l5h2xe80/mobile/5/x/r/-original-imagg4xza5rehdqv.jpeg?q=70"
+                    width="50px" height="50px" style="border-style:double; border-color: black;"><br>
+                Nothing Phone(1)<br>
+                Price: 29,999rs<br>
+                Add Items = <input type="number" id="think"><br><br>
+                <button id="bill" onclick="bill_it();">Add to Cart</button>
+            </div>
+            <div class="sub" style="border-style:groove ; border-radius: 15px;">
+                <img src="https://cdn1.smartprix.com/rx-i1ovwUq99-w420-h420/xiaomi-redmi-note-11.webp" width="50px"
+                    height="50px" style="border-style:double; border-color: black;"><br>
+                Xiaomi Redmi Note 11<br>
+                Price: 12,490rs<br>
+                Add Items = <input type="number" id="habits"><br><br>
+                <button id="bill" onclick="bill_it();">Add to Cart</button>
+            </div>
+            <div class="sub" style="border-style:groove ; border-radius: 15px;">
+                <img src="https://i.gadgets360cdn.com/products/large/vivo-t2-5g-db-709x800-1681200173.jpg?downsize=240:*"
+                    width="50px" height="50px" style="border-style:double; border-color: black;"><br>
+                Vivo T2 5G<br>
+                Price: 18,999rs<br>
+                Add Items = <input type="number" id="effective"><br><br>
+                <button id="bill" onclick="bill_it();">Add to Cart</button>
+            </div>
+        </div>
+        <h2 style="text-align: center;">Mobile Cover:</h2>
+        <div class="second" style="margin-left: 3%;">
+            <div class="sub" style="border-style:groove ; border-radius: 15px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzAJnt5deQuzKm9n0ZS6BTccPJ-pegc7xYeA&usqp=CAU"
+                    width="50px" height="50px" style="border-style:double; border-color: black;"><br>
+                Vivo U10 Cover<br>
+                Price: 80rs<br>
+                Add Items = <input type="number" id="last"><br><br>
+                <button id="bill" onclick="bill_it();">Add to Cart</button>
+            </div>
+            <div class="sub" style="border-style:groove ; border-radius: 15px;">
+                <img src="https://m.media-amazon.com/images/I/41YSlZR9+kL._SY450_.jpg" width="50px" height="50px"
+                    style="border-style:double; border-color: black;"><br>
+                Realme C2 Cover<br>
+                Price: 90rs<br>
+                Add Items = <input type="number" id="rings"><br><br>
+                <button id="bill" onclick="bill_it();">Add to Cart</button>
+            </div>
+            <div class="sub" style="border-style:groove ; border-radius: 15px;">
+                <img src="https://m.media-amazon.com/images/I/71+A1Tq4oLL._SL1500_.jpg" width="50px" height="50px"
+                    style="border-style:double; border-color: black;"><br>
+                Samsung Galaxy A21s Cover<br>
+                Price: 100rs<br>
+                Add Items = <input type="number" id="mocking"><br><br>
+                <button id="bill" onclick="bill_it();">Add to Cart</button>
+            </div>
+            <div class="sub" style="border-style:groove ; border-radius: 15px;">
+                <img src="https://images.bewakoof.com/t320/tere-baap-ka-phone-hai-kya-iphone-11-mobile-cover-iphone-11-mobile-covers-259198-1576732794.jpg"
+                    width="50px" height="50px" style="border-style:double; border-color: black;"><br>
+                i phone11 Cover<br>
+                Price: 100rs<br>
+                Add Items = <input type="number" id="heaven"><br><br>
+                <button id="bill" onclick="bill_it();">Add to Cart</button>
+            </div>
+            <div class="sub" style="border-style:groove ; border-radius: 15px;">
+                <img src="https://images.bewakoof.com/t320/strong-women-oneplus-6-mobile-cover-oneplus-6-mobile-covers-335532-1614161842.jpg"
+                    width="50px" height="50px" style="border-style:double; border-color: black;"><br>
+                One Plus 6 Cover<br>
+                Price: 100rs<br>
+                Add Items = <input type="number" id="books"><br><br>
+                <button id="bill" onclick="bill_it();">Add to Cart</button>
+            </div>
+        </div>
+        <div id="third">
+            <h3>
+                <center>Billing Information :: <button id="bill" onclick="bill_it();window.print()">Bill It</button>
+                </center>
+            </h3>
+            <h2>Your Cart:</h2>
+            <div id="bill_print"></div>
+            <br><br>
+
+        </div>
+    </div>
+    <script>
+        function login() {
+            document.getElementById("detail").innerHTML = document.getElementById("user").value
+        }
+        function bill_it() {
+            val = document.getElementById("fire").value
+            val1 = document.getElementById("rich").value
+            val2 = document.getElementById("think").value
+            val3 = document.getElementById("habits").value
+            val4 = document.getElementById("effective").value
+            val5 = document.getElementById("last").value
+            val6 = document.getElementById("rings").value
+            val7 = document.getElementById("mocking").value
+            val8 = document.getElementById("heaven").value
+            val9 = document.getElementById("books").value
+            let total = 0
+            console.log(val)
+            if (val > 0) {
+                document.getElementById("bill_print").innerHTML += "<br>iphone 14 pro Max : items :" + val + "   value:" + val * 149900 + "<br>";
+                total += val * 149900;
+            }
+            if (val1 > 0) { document.getElementById("bill_print").innerHTML += "<br>OnePlus 11R 5G : items:" + val1 + "    value:" + val1 * 39999 + "<br>"; total += val1 * 39999; }
+            if (val2 > 0) { document.getElementById("bill_print").innerHTML += "<br>Nothing Phone(1) : items:" + val2 + "    value: " + val2 * 29999 + "<br>"; total += val2 * 29999 }
+            if (val3 > 0) { document.getElementById("bill_print").innerHTML += "<br>Xiaomi Redmi Note 11 : items:" + val3 + "    value:" + val3 * 12490 + "<br>"; totoal += val3 * 12490; }
+            if (val4 > 0) { document.getElementById("bill_print").innerHTML += "<br>Vivo T2 5G : items:" + val4 + "   value: " + val4 * 18999 + "<br>"; total += val4 * 18999; }
+            if (val5 > 0) { document.getElementById("bill_print").innerHTML += "<br>Vivo U10 Cover : items: " + val5 + "   value:" + val5 * 80 + "<br>"; total += val5 * 80; }
+            if (val6 > 0) { document.getElementById("bill_print").innerHTML += "<br>Realme C2 Cover : items: " + val6 + "   value: " + val6 * 90 + "<br>"; total += 90 }
+            if (val7 > 0) { document.getElementById("bill_print").innerHTML += "<br>Samsung Galaxy A21s Cover : items: " + val7 + "    value: " + val7 * 100 + "<br>"; total += 100 }
+            if (val8 > 0) { document.getElementById("bill_print").innerHTML += "<br>i phone11 Cover : items: " + val8 + "    value: " + val8 * 100 + "<br>"; total += 100 }
+            if (val9 > 0) { document.getElementById("bill_print").innerHTML += "<br>One Plus 6 Cover : items: " + val9 + "   value: " + val9 * 100 + "<br>"; total += 100; }
+            document.getElementById("bill_print").innerHTML += "<br><br>Total : " + total + "<br>-------------------------------------------------------------";
+        }
+
+    </script>
+</body>
+
+</html>
